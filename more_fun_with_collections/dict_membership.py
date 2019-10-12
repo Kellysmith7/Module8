@@ -9,9 +9,14 @@ Program to find an elemenet in a dictonary
 """
 
 
-def in_dict():
-    pass
-#This will eventually accept a set and return a boolean value stating if the element is in the set.
+def in_dict(x):
+    dict_pets = {"type": "cat", "size": "medium", "breed": "American Shorthair"}
+    if x in dict_pets:
+        return 'True'
+    else:
+        return 'False'
 
 
+if __name__ == '__main__':
+    print(in_dict("type"))
 
