@@ -18,6 +18,10 @@ class MyTestCase(unittest.TestCase):
     def test_f(self):
         self.assertEqual('Score is between 0 and 59', assign_average.switch_average('f'))
 
+    def test_e(self):
+        self.assertEqual("Invalid letter grade", assign_average.switch_average('e'))
+
+
 
 if __name__ == '__main__':
     unittest.main()
