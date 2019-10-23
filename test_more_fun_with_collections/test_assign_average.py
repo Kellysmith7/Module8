@@ -12,6 +12,9 @@ class MyTestCase(unittest.TestCase):
     def test_c(self):
         self.assertEqual('Score is between 70 and 79', assign_average.switch_average('c'))
 
+    def test_d(self):
+        self.assertEqual('Score is between 60 and 69', assign_average.switch_average('d'))
+
 
 if __name__ == '__main__':
     unittest.main()
